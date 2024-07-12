@@ -217,6 +217,7 @@ then
     then
         source "${venv_dir}"/bin/activate
     else
+        printf("${venv_dir}/bin/activate")
         printf "\n%s\n" "${delimiter}"
         printf "\e[1m\e[31mERROR: Cannot activate python venv, aborting...\e[0m"
         printf "\n%s\n" "${delimiter}"
